@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Montserrat Light';
-    src: url('Montserrat-Light.ttf') format('truetype');  /* Fixed typo in Montserrat */
+    src: url('Monsterrat-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -64,14 +64,11 @@ body {
 
 .main-content h2 {
     margin-bottom: 2rem;
-    font-size: 1.75rem;
-    letter-spacing: 0.05em;
 }
 
 .listing-grid {
     display: grid;
     gap: 1rem;
-    margin-bottom: 4rem;
 }
 
 .listing-card {
@@ -82,12 +79,6 @@ body {
     gap: 1rem;
     position: relative;
     min-height: 160px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Added transition for hover effects */
-}
-
-.listing-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
 }
 
 .listing-image {
@@ -100,11 +91,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;  /* Added transition for image hover */
-}
-
-.listing-card:hover .listing-image img {
-    transform: scale(1.05);  /* Slight zoom on hover */
 }
 
 .listing-content {
@@ -114,13 +100,13 @@ body {
 }
 
 .listing-title {
-    font-family: 'Ubuntu Regular', sans-serif;  /* Changed from Ubuntu Sans Mono */
+    font-family: 'Ubuntu Regular', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .listing-description {
-    font-family: 'Ubuntu Regular', sans-serif;  /* Changed from Ubuntu Sans Mono */
+    font-family: 'Ubuntu Regular', sans-serif;
 }
 
 .listing-link {
@@ -136,71 +122,9 @@ body {
     padding: 0.25rem 0.5rem;
     display: inline-block;
     font-family: 'Ubuntu Sans Mono', monospace;
-    transition: background-color 0.3s ease;  /* Added transition for link hover */
-}
-
-.listing-link a:hover {
-    background: #ffd633;  /* Lighter yellow on hover */
-}
-
-/* Rest of the CSS remains the same... */
-/* Office Grid Styles */
-.office-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-    max-height: 600px;
-    overflow-y: auto;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-}
-
-.office-grid::-webkit-scrollbar {
-    width: 8px;
-}
-
-.office-grid::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-}
-
-.office-grid::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    &:hover {
-        background: rgba(255, 255, 255, 0.5);
-    }
-}
-
-.office-image {
-    aspect-ratio: 1;
-    overflow: hidden;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.office-image:hover {
-    transform: scale(1.02);
-}
-
-.office-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 1024px) {
-    .office-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-height: 800px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -251,7 +175,7 @@ body {
 }
 
 /* Small phones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
     .container {
         padding: 0.5rem;
     }
@@ -267,12 +191,5 @@ body {
 
     .listing-title {
         font-size: 1rem;
-    }
-
-    .office-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        max-height: none;
-        padding: 0.5rem;
     }
 }
